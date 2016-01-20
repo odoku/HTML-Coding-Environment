@@ -1,0 +1,15 @@
+{% extends "layout/_base.html" %}
+
+{% block extra_js %}
+  <script src="/js/page.js"></script>
+  <script>
+    alert('hogehoge!!!!');
+  </script>
+{% endblock %}
+
+{% block body %}
+  <h1>Nunjacks Sample</h1>
+
+  {% set name = "山田さん" %}
+  {% include "components/_form.html" %}
+{% endblock %}
